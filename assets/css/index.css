@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --footer-height: 20%;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+body {
+  color: rgba(255, 255, 255, 0.793);
+  background: #0c0f29;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bg-grid.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Blob and Blur Effects */
+#blob {
+  background-color: #f0f0e4;
+  height: 24vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, #0015ff, #ff8000);
+  filter: blur(8vmax);
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  position: relative; /* To ensure content is layered properly */
+  z-index: 2; /* Main content stays above the blob and blur */
+}
+
+.header {
+  padding: 2rem 3rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #0c0f2931;
+  backdrop-filter: blur(10px);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20; /* Navbar stays above everything */
+}
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  color: #ff8000;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  color: #ff8000;
+}
+
+.corner-logo {
+  width: 120px;
+  height: auto;
+}
+
+/* Menu */
+.menu-button {
+  position: relative;
+  z-index: 20;
+  width: 30px;
+  cursor: pointer;
+}
+
+.menu-button > span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 6px 0;
+  background-color: #fff;
+  transition: 0.4s;
+  position: relative;
+  z-index: 21;
+}
+
+.menu-open .menu-button span:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 9px);
+  z-index: 21;
+}
+
+.menu-open .menu-button span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-open .menu-button span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  z-index: 21;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: #0000008c;
+  backdrop-filter: blur(10px);
+  transition: right 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-content > a {
+  color: #f0f0e4;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-open .menu-overlay {
+  right: 0;
+  z-index: 10;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+  padding: clamp(2rem, 6vw, 8rem);
+}
+
+.link-menu {
+  color: #979fea7a;
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(2rem, 6vw, 8rem);
+  text-decoration: none;
+  position: relative;
+}
+
+.link-menu:hover {
+  font-style: italic;
+  color: #ff8000;
+}
+
+.span-menu {
+  display: block;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+}
+
+.link-menu:hover > .span-menu {
+  border-top-color: #f0f0e4;
+  border-bottom-color: #f0f0e4;
+}
+
+/* Heading Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  z-index: 3; /* Content stays above the effects */
+}
+
+.hero-content {
+  text-align: center;
+  align-self:center;
+}
+
+.event-title {
+  font-size: 24px;
+  color: #ff8000;
+}
+
+.logo-container {
+  position: relative;
+  max-width: 600px;
+  height: auto;
+}
+
+.main-logo {
+  max-width: 100%;
+  height: auto;
+  margin-top: 25px;
+  z-index: 1;
+}
+
+/* .main-logo-blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 25px;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+} */
+
+.dates {
+  font-size: 30px;
+  color: #f0f0e4;
+  margin: 20px 0;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.location {
+  font-size: 30px;
+  color: #f0f0e4;
+  margin: 20px 0;
+}
+
+/* .location:hover, .dates:hover, .event-title:hover {
+  text-shadow: 0 0 10px #ff8000, 0 0 20px #ff8000, 0 0 30px #ff8000;
+} */
+
+/* Robot Background Image */
+.bg-robot {
+  position: absolute;
+  margin-right: 0;
+  bottom: 12%;
+  right: 0;
+  width: 50%; /* Adjust the size to cover half of the page */
+  height: auto;
+  min-height: calc(
+    100vh - var(--footer-height)
+  ); /* Extends slightly beyond the footer */
+  background-image: url("../images/bg_robot.png");
+  background-size: contain; /* Contain the image within the height */
+  background-repeat: no-repeat;
+  background-position: right bottom; /* Align to the top right */
+  z-index: 1; /* Keeps it behind the footer and content */
+}
+
+/* Landing Footer Section */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff1a; /* Light transparent background */
+  backdrop-filter: blur(10px); /* Blurring effect behind the footer */
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50px 50px 0 0; /* Rounded corners */
+  border: 1px solid #ffffff33; /* Light border to enhance the glass effect */
+  box-shadow: 0 4px 10px #0000004d; /* Slight shadow for depth */
+  color: #f0f0e4;
+  height: var(--footer-height); /* Use the variable for height */
+  z-index: 3; /* Footer stays above the effects */
+}
+
+.footer-awards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the awards horizontally */
+  align-items: center;
+  gap: 20px; /* Adjust spacing between awards */
+  padding: 20px 0;
+  max-height: 30vh; /* Limit the awards section to not exceed half the viewport height */
+}
+
+.award-item {
+  flex: 1 1 auto; /* Allow items to grow and shrink evenly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-item img {
+  max-width: 100%; /* Ensure images scale within their container */
+  height: 100px; /* Set a fixed height for equal sizing */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+
+@media only screen and (max-width: 1672px) {
+  .bg-robot {
+    width: 946.55px;
+    bottom: 12%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .bg-robot {
+    display: none;
+  }
+
+  .hero-content {
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .main-logo {
+    max-width: 100%;
+  }
+
+  .footer-awards {
+    flex-direction: column; /* Stack awards vertically */
+    gap: 15px;
+  }
+
+  .corner-logo {
+    max-width: 15vw; /* Adjust for smaller screens */
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bg-robot {
+    display: none;
+  }
+  .hero-content {
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .main-logo {
+    max-width: 100%;
+  }
+
+  .corner-logo {
+    max-width: 20vw;
+  }
+
+  @media (min-width: 768px) {
+    .footer-awards {
+      flex-wrap: nowrap; 
+      gap: 50px;
+    }
+  }
+}
