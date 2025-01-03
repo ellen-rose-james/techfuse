@@ -309,9 +309,11 @@ body::before {
   color: #f0f0e4;
   height: var(--footer-height); /* Use the variable for height */
   z-index: 3; /* Footer stays above the effects */
+  overflow-x: hidden;
+
 }
 
-.footer-awards {
+.footer-partners {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Center the awards horizontally */
@@ -321,16 +323,16 @@ body::before {
   max-height: 30vh; /* Limit the awards section to not exceed half the viewport height */
 }
 
-.award-item {
+.partner-item {
   flex: 1 1 auto; /* Allow items to grow and shrink evenly */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.award-item img {
+.partner-item img {
   max-width: 100%; /* Ensure images scale within their container */
-  height: 100px; /* Set a fixed height for equal sizing */
+  height: 80px; /* Set a fixed height for equal sizing */
   object-fit: contain; /* Maintain aspect ratio */
 }
 
@@ -356,9 +358,13 @@ body::before {
     max-width: 100%;
   }
 
-  .footer-awards {
+  .footer-partners {
     flex-direction: column; /* Stack awards vertically */
-    gap: 15px;
+    gap: 10px;
+  }
+
+  .partner-item img {
+    height: 60px; /* Further reduce image size for small screens */
   }
 
   .corner-logo {
@@ -385,10 +391,20 @@ body::before {
     max-width: 20vw;
   }
 
-  @media (min-width: 768px) {
-    .footer-awards {
-      flex-wrap: nowrap; 
-      gap: 50px;
-    }
+  .footer-partners {
+    gap: 5px;
+    padding: 10px 0;
+  }
+
+  .partner-item img {
+    height: 50px; /* Shrink images for very small screens */
+  }
+
+}
+
+@media (min-width: 768px) {
+  .footer-partners {
+    flex-wrap: nowrap; 
+    gap: 50px;
   }
 }
