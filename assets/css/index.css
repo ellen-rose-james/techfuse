@@ -324,7 +324,7 @@ body::before {
   flex-wrap: wrap;
   justify-content: center; /* Center the awards horizontally */
   align-items: center;
-  gap: 20px; /* Adjust spacing between awards */
+  gap: 30px; /* Adjust spacing between awards */
   padding: 20px 0;
   max-height: 30vh; /* Limit the awards section to not exceed half the viewport height */
 }
@@ -338,7 +338,6 @@ body::before {
 
 .partner-item img {
   max-width: 100%; /* Ensure images scale within their container */
-  height: 80px; /* Set a fixed height for equal sizing */
   object-fit: contain; /* Maintain aspect ratio */
 }
 
