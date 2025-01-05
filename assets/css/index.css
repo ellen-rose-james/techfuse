@@ -8,7 +8,6 @@
   --footer-height: 20%;
 }
 
-
 .inter-regular {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
@@ -36,7 +35,6 @@
   font-weight: 700;
   font-style: italic;
 }
-
 
 body {
   color: rgba(255, 255, 255, 0.793);
@@ -207,18 +205,17 @@ body::before {
 
 .span-menu {
   display: block;
-  border-bottom: 1px solid transparent;
-  border-top: 1px solid transparent;
+  /* border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent; */
   position: relative;
   z-index: 2;
-  padding: 2px;
-  margin: 8px;
+  padding: 5px;
 }
 
-.link-menu:hover > .span-menu {
+/* .link-menu:hover > .span-menu {
   border-top-color: #f0f0e4;
   border-bottom-color: #f0f0e4;
-}
+} */
 
 /* Heading Section */
 .hero-section {
@@ -232,7 +229,7 @@ body::before {
 
 .hero-content {
   text-align: center;
-  align-self:center;
+  align-self: center;
 }
 
 .event-title {
@@ -280,24 +277,6 @@ body::before {
   text-shadow: 0 0 10px #ff8000, 0 0 20px #ff8000, 0 0 30px #ff8000;
 } */
 
-/* Robot Background Image */
-.bg-robot {
-  position: absolute;
-  margin-right: 0;
-  bottom: 12%;
-  right: 0;
-  width: 50%; /* Adjust the size to cover half of the page */
-  height: auto;
-  min-height: calc(
-    100vh - var(--footer-height)
-  ); /* Extends slightly beyond the footer */
-  background-image: url("../images/bg_robot.png");
-  background-size: contain; /* Contain the image within the height */
-  background-repeat: no-repeat;
-  background-position: right bottom; /* Align to the top right */
-  z-index: 1; /* Keeps it behind the footer and content */
-}
-
 /* Landing Footer Section */
 
 .footer {
@@ -316,7 +295,6 @@ body::before {
   height: var(--footer-height); /* Use the variable for height */
   z-index: 3; /* Footer stays above the effects */
   overflow-x: hidden;
-
 }
 
 .footer-partners {
@@ -342,16 +320,9 @@ body::before {
 }
 
 
-@media only screen and (max-width: 1672px) {
-  .bg-robot {
-    width: 946.55px;
-    bottom: 12%;
-  }
-}
-
 @media (min-width: 1024px) {
   .menu-overlay {
-    width: 500px; 
+    width: 500px;
     right: -500px;
   }
 
@@ -377,9 +348,7 @@ body::before {
 }
 
 @media only screen and (max-width: 900px) {
-  .bg-robot {
-    display: none;
-  }
+
 
   .hero-content {
     text-align: center;
@@ -407,9 +376,7 @@ body::before {
 }
 
 @media only screen and (max-width: 480px) {
-  .bg-robot {
-    display: none;
-  }
+  
   .hero-content {
     text-align: center;
     align-items: center;
@@ -431,12 +398,11 @@ body::before {
   .partner-item img {
     height: 50px; /* Shrink images for very small screens */
   }
-
 }
 
 @media (min-width: 768px) {
   .footer-partners {
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     gap: 50px;
   }
 }
