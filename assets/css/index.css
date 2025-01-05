@@ -284,7 +284,7 @@ body::before {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 2rem;
   background: #ffffff1a; /* Light transparent background */
   backdrop-filter: blur(10px); /* Blurring effect behind the footer */
   -webkit-backdrop-filter: blur(10px);
