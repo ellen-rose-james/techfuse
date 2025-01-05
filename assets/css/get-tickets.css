@@ -8,7 +8,7 @@
   position: relative;
   padding: 12px 35px;
   background: var(--color);
-  font-family: "Space Mono", serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 17px;
@@ -91,7 +91,7 @@
   background: transparent;
   color: var(white);
   box-shadow: 0 0 25px white;
-  font-family: "Space Mono", serif;
+  font-family: "Inter", serif;
   font-weight: 700;
   font-style: italic;
 }
@@ -170,7 +170,7 @@ button:hover .star-6 {
   position: relative;
   padding: 12px 35px;
   background: #f0f0f0;
-  font-family: "Space Mono", serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 17px;
@@ -187,7 +187,7 @@ button:hover .star-6 {
   background: transparent;
   color: var(--color);
   box-shadow: 0 0 25px white;
-  font-family: "Space Mono", serif;
+  font-family: "Inter", serif;
   font-weight: 700;
   font-style: italic;
 }

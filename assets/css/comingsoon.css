@@ -8,30 +8,33 @@
     --footer-height: 20%;
   }
   
-  .space-mono-regular {
-    font-family: "Space Mono", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .space-mono-bold {
-    font-family: "Space Mono", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .space-mono-regular-italic {
-    font-family: "Space Mono", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .space-mono-bold-italic {
-    font-family: "Space Mono", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
+.inter-regular {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-bold {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inter-italic {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inter-bold-italic {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
   
   body {
     color: rgba(255, 255, 255, 0.793);
@@ -187,7 +190,7 @@
   
   .link-menu {
     color: #979fea7a;
-    font-family: "Space Mono", serif;
+    font-family: "Inter", serif;
     font-weight: 700;
     font-style: normal;
     font-size: clamp(2rem, 6vw, 8rem);

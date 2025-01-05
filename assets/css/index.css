@@ -8,26 +8,31 @@
   --footer-height: 20%;
 }
 
-.space-mono-regular {
-  font-family: "Space Mono", serif;
+
+.inter-regular {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-.space-mono-bold {
-  font-family: "Space Mono", serif;
+.inter-bold {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
-.space-mono-regular-italic {
-  font-family: "Space Mono", serif;
+.inter-italic {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;
 }
 
-.space-mono-bold-italic {
-  font-family: "Space Mono", serif;
+.inter-bold-italic {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
   font-weight: 700;
   font-style: italic;
 }
@@ -147,11 +152,11 @@ body::before {
 .menu-overlay {
   position: fixed;
   top: 0;
-  right: -100%;
-  width: 100%;
+  right: -500px;
+  width: 500px;
   height: 100%;
   background: #0000008c;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
   transition: right 0.5s ease-in-out;
   z-index: 10;
 }
@@ -160,7 +165,7 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 100%;
   transition: all 0.3s ease-in-out;
 }
@@ -181,16 +186,16 @@ body::before {
 .nav-menu {
   display: flex;
   flex-direction: column;
-  margin-top: 20vh;
-  padding: clamp(2rem, 6vw, 8rem);
+  margin: auto;
+  padding: clamp(0rem, 12vw, 8rem);
 }
 
 .link-menu {
-  color: #979fea7a;
-  font-family: "Space Mono", serif;
+  color: #ffffff82;
+  font-family: "Inter", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: clamp(2rem, 6vw, 8rem);
+  font-size: clamp(2rem, 4vw, 8rem);
   text-decoration: none;
   position: relative;
 }
@@ -206,7 +211,8 @@ body::before {
   border-top: 1px solid transparent;
   position: relative;
   z-index: 2;
-  padding: 10px;
+  padding: 2px;
+  margin: 8px;
 }
 
 .link-menu:hover > .span-menu {
@@ -341,6 +347,33 @@ body::before {
   .bg-robot {
     width: 946.55px;
     bottom: 12%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-overlay {
+    width: 500px; 
+    right: -500px;
+  }
+
+  .menu-open .menu-overlay {
+    right: 0;
+  }
+}
+
+/* Full-Screen Menu for Mobile */
+@media (max-width: 1023px) {
+  .menu-overlay {
+    right: -100%;
+    width: 100%;
+  }
+
+  .menu-open .menu-overlay {
+    right: 0;
+  }
+
+  .menu-content {
+    text-align: center;
   }
 }
 
