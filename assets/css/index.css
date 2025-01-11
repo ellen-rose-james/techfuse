@@ -38,7 +38,7 @@
 
 body {
   color: rgba(255, 255, 255, 0.793);
-  background: #0c0f29;
+  background: #000000;
   position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -319,7 +319,6 @@ body::before {
   object-fit: contain; /* Maintain aspect ratio */
 }
 
-
 @media (min-width: 1024px) {
   .menu-overlay {
     width: 500px;
@@ -348,8 +347,6 @@ body::before {
 }
 
 @media only screen and (max-width: 900px) {
-
-
   .hero-content {
     text-align: center;
     align-items: center;
@@ -376,7 +373,6 @@ body::before {
 }
 
 @media only screen and (max-width: 480px) {
-  
   .hero-content {
     text-align: center;
     align-items: center;
