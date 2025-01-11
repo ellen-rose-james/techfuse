@@ -423,7 +423,6 @@ body::before {
 }
 
 @media only screen and (max-width: 480px) {
-  
   .hero-content {
     text-align: center;
     align-items: center;

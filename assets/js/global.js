@@ -1,37 +1,38 @@
 //Menu Open Close
-const menuButton = document.getElementById('menuButton');
-const menuOverlay = document.getElementById('menuOverlay');
-const closeButton = document.getElementById('closeButton');
+const menuButton = document.getElementById("menuButton");
+const menuOverlay = document.getElementById("menuOverlay");
+const closeButton = document.getElementById("closeButton");
 let menuOpen = false;
 
-menuButton.addEventListener('click', () => {
-    if (!menuOpen) {
-        document.body.classList.add('menu-open');
-        menuOpen = true;
-    } else {
-        document.body.classList.remove('menu-open');
-        menuOpen = false;
-    }
-});
-
-closeButton.addEventListener('click', () => {
-    document.body.classList.remove('menu-open');
+menuButton.addEventListener("click", () => {
+  if (!menuOpen) {
+    document.body.classList.add("menu-open");
+    menuOpen = true;
+  } else {
+    document.body.classList.remove("menu-open");
     menuOpen = false;
+  }
 });
 
+closeButton.addEventListener("click", () => {
+  document.body.classList.remove("menu-open");
+  menuOpen = false;
+});
 
 // Blob Effect
 const blob = document.getElementById("blob");
 
-window.onpointermove = event => { 
+window.onpointermove = (event) => {
   const { clientX, clientY } = event;
-  
-  blob.animate({
-    left: `${clientX}px`,
-    top: `${clientY}px`
-  }, { duration: 3000, fill: "forwards" });
-}
 
+  blob.animate(
+    {
+      left: `${clientX}px`,
+      top: `${clientY}px`,
+    },
+    { duration: 3000, fill: "forwards" }
+  );
+};
 
 // // Music Toggle Functionality
 // const backgroundMusic = document.getElementById('backgroundMusic');
