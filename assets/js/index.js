@@ -1,13 +1,11 @@
 // Popup
-window.onload = function() {
+window.onload = function () {
   document.getElementById("popup").style.display = "flex";
 };
 
-document.getElementById("closePopup").onclick = function() {
+document.getElementById("closePopup").onclick = function () {
   document.getElementById("popup").style.display = "none";
 };
-
-
 
 // //Menu Open Close
 // const menuButton = document.getElementById("menuButton");
@@ -75,4 +73,3 @@ document.getElementById("closePopup").onclick = function() {
 //   isPlaying = true;
 //   musicToggleButton.textContent = "❚❚"; // Change to pause icon when music starts playing
 // });
-
