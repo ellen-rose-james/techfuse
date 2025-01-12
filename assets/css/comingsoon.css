@@ -163,7 +163,7 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 100%;
   transition: all 0.3s ease-in-out;
 }
@@ -184,7 +184,7 @@ body::before {
 .nav-menu {
   display: flex;
   flex-direction: column;
-  margin-top: 20vh;
+  margin: auto;
   padding: clamp(0rem, 12vw, 8rem);
 }
 
@@ -206,7 +206,7 @@ body::before {
 .span-menu {
   display: block;
   /* border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent; */
+  border-top: 1px solid transparent; */
   position: relative;
   z-index: 2;
   padding: 5px;
@@ -379,6 +379,23 @@ body::before {
 }
 
 /* Media Queries */
+
+/* Full-Screen Menu for Mobile */
+@media (max-width: 1023px) {
+  .menu-overlay {
+    right: -100%;
+    width: 100%;
+  }
+
+  .menu-open .menu-overlay {
+    right: 0;
+  }
+
+  .menu-content {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .blob {
     display: none;

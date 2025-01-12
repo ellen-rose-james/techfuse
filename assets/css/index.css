@@ -379,6 +379,8 @@ body::before {
   }
 }
 
+/* Media Queries */
+
 /* Full-Screen Menu for Mobile */
 @media (max-width: 1023px) {
   .menu-overlay {
