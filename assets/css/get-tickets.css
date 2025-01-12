@@ -260,3 +260,27 @@ button:hover .star-6 {
 .fil1 {
   fill: #ff8000;
 }
+
+/* Popup */
+
+.get-tickets-popup {
+  position: relative;
+  padding: 12px 35px;
+  background: var(--color);
+  font-family: "Inter", serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  border: 3px solid var(--color);
+  border-radius: 8px;
+  box-shadow: 0 0 0 #000000;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.get-tickets-popup:hover {
+  background: transparent;
+  color: var(--color);
+  box-shadow: 0 0 25px #0c0f2931;
+}
