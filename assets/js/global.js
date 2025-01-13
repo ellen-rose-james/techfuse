@@ -34,6 +34,13 @@ window.onpointermove = (event) => {
   );
 };
 
+// Animation on Scroll
+AOS.init({
+    duration: 1000, 
+    once: false, 
+    offset: 20,
+});
+
 // // Music Toggle Functionality
 // const backgroundMusic = document.getElementById('backgroundMusic');
 // const musicToggleButton = document.getElementById('musicToggleButton');
