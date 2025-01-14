@@ -151,7 +151,7 @@
   z-index: 2;
 }
 
-button:hover .star-6 {
+.get-tickets:hover .star-6 {
   position: absolute;
   top: 5%;
   left: 60%;
@@ -248,6 +248,104 @@ button:hover .star-6 {
 }
 
 .ca-button:hover .star-6 {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.fil1 {
+  fill: #ff8000;
+}
+
+/* Events Button */
+
+.ev-button {
+  position: relative;
+  padding: 12px 35px;
+  background: linear-gradient(to top, #004884, #008cff);
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  color: #f0f0f0;
+  border: 3px solid linear-gradient(to top, #001c32, #0087F5);
+  border-radius: 8px;
+  box-shadow: 0 0 0 white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.ev-button:hover {
+  background: transparent;
+  color: white;
+  box-shadow: 0 0 25px white;
+  border: 3px solid white;
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.ev-button:hover .star-1 {
+  position: absolute;
+  top: -80%;
+  left: -30%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.ev-button:hover .star-2 {
+  position: absolute;
+  top: -25%;
+  left: 10%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.ev-button:hover .star-3 {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.ev-button:hover .stars {
+  display: block;
+  filter: drop-shadow(0 0 10px #fffdef);
+}
+
+.ev-button:hover .star-4 {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.ev-button:hover .star-5 {
+  position: absolute;
+  top: 25%;
+  left: 115%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.ev-button:hover .star-6 {
   position: absolute;
   top: 5%;
   left: 60%;
