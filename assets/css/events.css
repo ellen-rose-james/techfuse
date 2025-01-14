@@ -339,10 +339,40 @@ body::before {
   padding: 30px;
 }
 
-.ticket-a:hover {
+.ticket-a span{
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.ticket-a span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-55%);
+  transition: 0.5s;
+  font-size: 50px;
+  line-height: 1;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.ticket-a:hover{
   background-color: #f0f0e4;
   color: #ff8000;
   font-style: italic;
+}
+
+.ticket-a:hover span {
+  padding-right: 40px;
+}
+
+.ticket-a:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 @media (max-width: 900px) {
