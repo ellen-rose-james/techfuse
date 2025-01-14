@@ -8,9 +8,6 @@
   position: relative;
   padding: 12px 35px;
   background: var(--color);
-  font-family: "Inter", serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 17px;
   color: #fffdef;
   border: 3px solid var(--color);
@@ -170,9 +167,6 @@
   position: relative;
   padding: 12px 35px;
   background: #f0f0f0;
-  font-family: "Inter", serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 17px;
   color: var(--color);
   border: 3px solid #f0f0f0;
@@ -267,9 +261,6 @@
   position: relative;
   padding: 12px 35px;
   background: linear-gradient(to top, #004884, #008cff);
-  font-family: "Inter", serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 17px;
   color: #f0f0f0;
   border: 3px solid linear-gradient(to top, #001c32, #0087F5);
