@@ -274,11 +274,16 @@ body::before {
   text-align: center;
   position: relative;
   z-index: 3; /* Content stays above the effects */
+  justify-content: center;
+  align-items: center; 
 }
 
 .hero-content {
-  text-align: center;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .event-title {
@@ -287,6 +292,9 @@ body::before {
 }
 
 .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   max-width: 600px;
   height: auto;
@@ -296,6 +304,7 @@ body::before {
   max-width: 100%;
   height: auto;
   margin-top: 25px;
+  align-items: center;
   z-index: 1;
 }
 
