@@ -260,10 +260,10 @@
 .ev-button {
   position: relative;
   padding: 12px 35px;
-  background: linear-gradient(to top, #004884, #008cff);
+  background: #ff8000;
   font-size: 17px;
   color: #f0f0f0;
-  border: 3px solid linear-gradient(to top, #001c32, #0087F5);
+  border: #ff8000;
   border-radius: 8px;
   box-shadow: 0 0 0 white;
   transition: all 0.3s ease-in-out;
