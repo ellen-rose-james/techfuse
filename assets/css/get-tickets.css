@@ -1,16 +1,11 @@
 /* Get Tickets button */
-
-:root {
-  --color: #ff8000;
-}
-
 .get-tickets {
   position: relative;
   padding: 12px 35px;
-  background: var(--color);
+  background: linear-gradient(to top, #ff8000, #ffa600 ) ;
   font-size: 17px;
   color: #fffdef;
-  border: 3px solid var(--color);
+  border: .5px solid #ff8000;
   border-radius: 8px;
   box-shadow: 0 0 0 white;
   transition: all 0.3s ease-in-out;
@@ -91,6 +86,7 @@
   font-family: "Inter", serif;
   font-weight: 700;
   font-style: italic;
+  border: 3px solid white;
 }
 
 .get-tickets:hover .star-1 {
@@ -166,10 +162,10 @@
 .ca-button {
   position: relative;
   padding: 12px 35px;
-  background: #f0f0f0;
+  background: linear-gradient(to top, #c5c5c5, #ffffff ) ;;
   font-size: 17px;
-  color: var(--color);
-  border: 3px solid #f0f0f0;
+  color: #ff8000;
+  border: .5px solid #f0f0f0;
   border-radius: 8px;
   box-shadow: 0 0 0 white;
   transition: all 0.3s ease-in-out;
@@ -179,11 +175,12 @@
 
 .ca-button:hover {
   background: transparent;
-  color: var(--color);
+  color: #ff8000;
   box-shadow: 0 0 25px white;
   font-family: "Inter", serif;
   font-weight: 700;
   font-style: italic;
+  border: 3px solid white;
 }
 
 .ca-button:hover .star-1 {
@@ -260,11 +257,15 @@
 .ev-button {
   position: relative;
   padding: 12px 35px;
-  background: #ff8000;
+  background: #140145;
   font-size: 17px;
   color: #f0f0f0;
-  border: #ff8000;
+  border: .5px solid transparent;
   border-radius: 8px;
+  background-image: linear-gradient(to top, #140145, #2c1e52),
+    linear-gradient(to top, #f0f0f0, #140145);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   box-shadow: 0 0 0 white;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -355,21 +356,43 @@
 .get-tickets-popup {
   position: relative;
   padding: 12px 35px;
-  background: var(--color);
+  background: #ff8000;
   font-family: "Inter", serif;
   font-size: 17px;
   font-weight: 500;
   color: white;
-  border: 3px solid var(--color);
+  border: 3px solid #ff8000;
   border-radius: 8px;
   box-shadow: 0 0 0 #000000;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  margin: 20px;
+  margin: 10px 10px 20px 10px;
 }
 
 .get-tickets-popup:hover {
   background: transparent;
-  color: var(--color);
+  color: #ff8000;
+  box-shadow: 0 0 25px #0c0f2931;
+}
+
+.event-btn-popup {
+  position: relative;
+  padding: 12px 35px;
+  background: #140145;
+  font-family: "Inter", serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  border: 3px solid #140145;
+  border-radius: 8px;
+  box-shadow: 0 0 0 #000000;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 20px 10px 10px 10px;
+}
+
+.event-btn-popup:hover {
+  background: transparent;
+  color: #140145;
   box-shadow: 0 0 25px #0c0f2931;
 }
