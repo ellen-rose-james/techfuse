@@ -239,8 +239,14 @@ body::before {
   text-align: left;
   font-size: 60px;
   color: white;
-  margin: 50px;
   z-index: 10;
+  margin: 10px;
+}
+
+.hero-content{
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 50px;
 }
 
 /* Gallery */
