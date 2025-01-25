@@ -422,6 +422,17 @@ body::before {
   }
 }
 
+.status-tag{
+  display: inline-block;
+  background-color: #24a005;
+  color: white;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  border-radius: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Footer */
 
 .footer {
