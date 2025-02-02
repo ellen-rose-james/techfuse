@@ -89,7 +89,7 @@ body::before {
 /* Registrations Closed Banner */
 
 .banner::before {
-  content: "-- Tickets Sold Out! Registrations Closed! See You at Techfuse! --";
+  content: "Tickets Sold Out! Registrations Closed! See You at Techfuse!";
 }
 
 .banner {
@@ -106,7 +106,7 @@ body::before {
   text-shadow: calc(var(--ch) * 0) 0 1px var(--clr),
     calc(var(--ch) * 1) 0 1px var(--clr), calc(var(--ch) * 2) 0 1px var(--clr),
     calc(var(--ch) * 3) 0 1px var(--clr), calc(var(--ch) * 4) 0 1px var(--clr);
-  animation: move 3s linear infinite;
+  animation: move 7s linear infinite;
   z-index: 50;
 }
 
