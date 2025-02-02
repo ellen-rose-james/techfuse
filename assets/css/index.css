@@ -307,7 +307,7 @@ body::before {
   position: relative;
   z-index: 3; /* Content stays above the effects */
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .hero-content {
@@ -435,6 +435,10 @@ body::before {
 
   .menu-content {
     text-align: center;
+  }
+
+  .banner::before {
+    content: "Tickets Sold Out!";
   }
 }
 
