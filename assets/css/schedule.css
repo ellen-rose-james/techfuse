@@ -268,7 +268,7 @@ body::before {
 
 .day-btn.active {
   background-color: #ff8000;
-  color: #ccc;
+  color: #fff;
 }
 
 .event-card {
@@ -278,7 +278,7 @@ body::before {
   margin: 10px;
   width: 25rem;
   text-align: left;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px #ffffff1a;
 }
 
 .event-card:hover {
@@ -295,6 +295,7 @@ body::before {
   margin-bottom: 10px;
   font-size: 24px;
   color: #fff;
+  
 }
 
 .event-desc {
