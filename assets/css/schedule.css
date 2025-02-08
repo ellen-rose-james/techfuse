@@ -225,7 +225,6 @@ body::before {
   border-bottom-color: #f0f0e4;
 } */
 
-
 /* Heading Section */
 .hero-section {
   display: flex;
@@ -259,16 +258,17 @@ body::before {
   background-color: #2d2d2d;
   color: #fff;
   border: none;
+  width: 12.5rem;
   padding: 10px 20px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .day-btn.active {
   background-color: #ff8000;
-  color: #000;
+  color: #ccc;
 }
 
 .event-card {
@@ -279,7 +279,10 @@ body::before {
   width: 25rem;
   text-align: left;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  
+}
+
+.event-card:hover {
+  background-color: #ff800039;
 }
 
 .event-date {
@@ -304,7 +307,6 @@ body::before {
   font-weight: bold;
   text-decoration: none;
 }
-
 
 /* Footer */
 
