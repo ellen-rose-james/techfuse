@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="x icon"
+      href="./assets/images/gradient.svg"
+    />
+    <title>TechFuse - IEEE SPS SBC RIT</title>
+    <link rel="stylesheet" href="./assets/css/schedule.css?v=2.0" />
+    <link rel="stylesheet" href="./assets/css/get-tickets.css?v=2.0" />
+		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  </head>
+
+  <body class="inter-regular">
+    <div class="container">
+      
+
+      <header class="header">
+        <a href="index.html"
+          ><img
+            src="./assets/images/techfuselogocorner.png"
+            alt="Corner Logo"
+            class="corner-logo"
+        /></a>
+        <!-- <button id="musicToggleButton" class="toggle-button">▶️</button> -->
+        <div class="menu-button" id="menuButton">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+          <nav id="nav" class="nav-menu">
+            <a href="index.html" class="link-menu"
+              ><span class="span-menu">HOME</span></a
+            >
+            <a href="about.html" class="link-menu"
+              ><span class="span-menu">ABOUT</span></a
+            >
+            <a href="gallery.html" class="link-menu"
+              ><span class="span-menu">GALLERY</span></a
+            >
+            <!-- <a
+              href="https://www.yepdesk.com/techfuse"
+              class="link-menu"
+              target="_blank"
+              ><span class="span-menu">REGISTER</span></a
+            > -->
+          </nav>
+          <div class="close-button" id="closeButton"></div>
+        </div>
+      </div>
+
+      <section class="hero-section">
+        <div class="hero-content">
+          <h2 class="event-title inter-bold">EVENT SCHEDULE</h2>
+        </div>
+      </section>
+
+      <div class="timeline">
+        <div class="days">
+            <button class="day-btn active" onclick="showEvents(1)">Day 1</button>
+            <button class="day-btn" onclick="showEvents(2)">Day 2</button>
+        </div>
+
+        <div id="events-container">
+            <!-- Day 1 Events -->
+            <div class="event-card day-1">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 8:00am - 10:00am IST</p>
+              <h3 class="event-heading inter-bold">Registration</h3>
+              <p class="event-desc">
+                Venue: EEE Department
+              </p>
+            </div>
+            <div class="event-card day-1">
+                <p class="event-date">📅 Feb 8, 2025 • ⏰ 10:00am - 11:00am IST</p>
+                <h3 class="event-heading inter-bold">Inauguration Ceremony</h3>
+                <p class="event-desc">
+                  Venue: Auditorium
+                </p>
+              </div>
+            <div class="event-card day-1">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 11:00am - 01:00pm IST</p>
+              <h3 class="event-heading inter-bold">Connecting Hearts and Minds</h3>
+              <p class="event-desc">
+                Venue: Auditorium
+              </p>
+            </div>
+            <div class="event-card day-1">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 01:00pm - 02:00pm IST</p>
+              <h3 class="event-heading inter-bold">Lunch</h3>
+              <p class="event-desc">
+                Venue: Auditorium
+              </p>
+            </div>
+            <div class="event-card day-1">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 02:00pm - 03:00pm IST</p>
+              <h3 class="event-heading inter-bold">Ice Breaking Session</h3>
+              <p class="event-desc">
+                Venue: Auditorium
+              </p>
+            </div>
+            <div class="event-card day-1">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 03:00pm - 6:15pm IST</p>
+              <h3 class="event-heading inter-bold">Parallel Workshop: IoT</h3>
+              <p class="event-desc">
+                Venue: Software Lab, EEE Department
+              </p>
+            </div>
+            <div class="event-card day-1">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 03:00pm - 6:15pm IST</p>
+              <h3 class="event-heading inter-bold">Parallel Workshop: PCB Design</h3>
+              <p class="event-desc">
+                Venue: Systems Lab, ECE Department
+              </p>
+            </div>
+            <div class="event-card day-1">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 03:00pm - 6:15pm IST</p>
+              <h3 class="event-heading inter-bold">Parallel Workshop: Verilog</h3>
+              <p class="event-desc">
+                Venue: Computer Lab, ECE Department
+              </p>
+            </div>
+            <div class="event-card day-1">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 06:15pm - 07:15pm IST</p>
+              <h3 class="event-heading inter-bold">Cultural Night</h3>
+              <p class="event-desc">
+                Venue: Auditorium
+              </p>
+            </div>
+            <div class="event-card day-1">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 07:15pm - 08:00pm IST</p>
+              <h3 class="event-heading inter-bold">Dinner</h3>
+              <p class="event-desc">
+                Venue: Auditorium
+              </p>
+            </div>
+
+
+            <!-- Day 2 Events -->
+            <div class="event-card day-2">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 08:00am - 09:00am IST</p>
+              <h3 class="event-heading inter-bold">Breakfast</h3>
+              <p class="event-desc">
+                Venue: Auditorium
+              </p>
+            </div>
+            <div class="event-card day-2">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 09:00am -12:00 IST</p>
+              <h3 class="event-heading inter-bold">Parallel Workshop: IoT</h3>
+              <p class="event-desc">
+                Venue: Software Lab, EEE Department
+              </p>
+            </div>
+            <div class="event-card day-2">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 09:00am -12:00 IST</p>
+              <h3 class="event-heading inter-bold">Parallel Workshop: PCB Design</h3>
+              <p class="event-desc">
+                Venue: Systems Lab, ECE Department
+              </p>
+            </div>
+            <div class="event-card day-2">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 09:00am -12:00 IST</p>
+              <h3 class="event-heading inter-bold">Parallel Workshop: Verilog</h3>
+              <p class="event-desc">
+                Venue: Computer Lab, ECE Department
+              </p>
+            </div>
+            <div class="event-card day-2">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 12:00 - 01:00pm IST</p>
+              <h3 class="event-heading inter-bold">Lunch</h3>
+              <p class="event-desc">
+                Venue: Auditorium
+              </p>
+            </div>
+            <div class="event-card day-2">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 01:00pm - 01:30pm IST</p>
+              <h3 class="event-heading inter-bold">Feedback Session</h3>
+              <p class="event-desc">
+                Venue: Auditorium
+              </p>
+            </div>
+            <div class="event-card day-2">
+              <p class="event-date">📅 Feb 8, 2025 • ⏰ 01:30pm - 02:00pm IST</p>
+              <h3 class="event-heading inter-bold">Closing Ceremony + Photo Session</h3>
+              <p class="event-desc">
+                Venue: Auditorium
+              </p>
+            </div>
+        </div>
+    </div>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <h3>Stay Updated</h3>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/ieeesbrit/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ieeesbrit/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:ieeesb.ritk@gmail.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+
+          <h3>Contact Us</h3>
+          <ul class="contact-list">
+            <li>
+              <a
+                href="wa.me/+918281813211"
+                style="color: white; text-decoration: none"
+                ><strong>Naveen Pradeep Kumar Pillai:</strong></a
+              >
+              +91 8281813211
+            </li>
+            <li>
+              <a
+                href="wa.me/+919995608983"
+                style="color: white; text-decoration: none"
+                ><strong>Gopika Pillai:</strong></a
+              >
+              +91 9995608983
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h3>Address</h3>
+          <p>
+            Rajiv Gandhi Institute of Technology<br />
+            (Government Engineering College)<br />
+            Pampady, Kottayam, Kerala<br />
+            Pin: 686502<br />
+            <br /><br />
+            <b>Built by:</b>
+            <br />
+            <a
+              href="http://www.linkedin.com/in/ellenrosejames"
+              target="_blank"
+              style="text-decoration: none"
+              >Ellen Rose James</a
+            >
+            <br />
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/schedule.js?v=2.0"></script>
+  </body>
+</html>
