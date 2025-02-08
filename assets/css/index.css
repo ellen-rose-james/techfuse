@@ -438,7 +438,7 @@ body::before {
   }
 
   .banner::before {
-    content: "Tickets Sold Out!";
+    content: "Happening Now";
   }
 }
 
