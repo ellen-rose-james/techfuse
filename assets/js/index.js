@@ -1,11 +1,23 @@
 // Popup
-window.onload = function () {
-  document.getElementById("popup").style.display = "flex";
-};
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("popup");
+  const closePopup = document.getElementById("closePopup");
+  const video = document.getElementById("popupVideo");
 
-document.getElementById("closePopup").onclick = function () {
-  document.getElementById("popup").style.display = "none";
-};
+  if (popup && closePopup && video) {
+    // Popup appears
+    popup.style.display = "flex";
+
+    // Close popup 
+    closePopup.addEventListener("click", function () {
+      popup.style.display = "none";
+      video.pause(); 
+      video.currentTime = 0; 
+    });
+  } else {
+    console.error("Popup, Close Button, or Video not found in the DOM.");
+  }
+});
 
 // //Menu Open Close
 // const menuButton = document.getElementById("menuButton");

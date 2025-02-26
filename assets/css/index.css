@@ -284,6 +284,17 @@ body::before {
   border-radius: 12px;
 }
 
+/* Video container */
+.popup-video-container {
+  margin-bottom: 20px;
+}
+
+.popup-video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 /* Close button */
 .close-btn {
   position: absolute;
@@ -296,6 +307,7 @@ body::before {
   color: #fff;
   background-color: #ff8000cf;
   border-radius: 6px;
+  z-index: 30;
 }
 
 /* Heading Section */
