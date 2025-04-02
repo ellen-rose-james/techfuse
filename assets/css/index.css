@@ -60,7 +60,6 @@ body::before {
   z-index: -1;
 }
 
-/* Blob and Blur Effects */
 #blob {
   background-color: #f0f0e4;
   height: 24vmax;
@@ -82,11 +81,9 @@ body::before {
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-  position: relative; /* To ensure content is layered properly */
-  z-index: 2; /* Main content stays above the blob and blur */
+  position: relative;
+  z-index: 2;
 }
-
-/* Registrations Closed Banner */
 
 .banner::before {
   content: "Happening Now! Happening Now! Happening Now!";
@@ -127,7 +124,7 @@ body::before {
   backdrop-filter: blur(10px);
   justify-content: space-between;
   align-items: center;
-  z-index: 20; /* Navbar stays above everything */
+  z-index: 20;
 }
 
 .toggle-button {
@@ -146,7 +143,6 @@ body::before {
   height: auto;
 }
 
-/* Menu */
 .menu-button {
   position: relative;
   z-index: 20;
@@ -237,33 +233,24 @@ body::before {
 
 .span-menu {
   display: block;
-  /* border-bottom: 1px solid transparent;
-  border-top: 1px solid transparent; */
   position: relative;
   z-index: 2;
   padding: 5px;
 }
 
-/* .link-menu:hover > .span-menu {
-  border-top-color: #f0f0e4;
-  border-bottom-color: #f0f0e4;
-} */
-
-/* Popup container */
 .popup-container {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+  background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
 }
 
-/* Popup content */
 .popup-content {
   background-color: #fff;
   border-radius: 24px;
@@ -273,7 +260,6 @@ body::before {
   position: relative;
 }
 
-/* Image container */
 .popup-image-container {
   margin-bottom: 20px;
 }
@@ -284,7 +270,6 @@ body::before {
   border-radius: 12px;
 }
 
-/* Video container */
 .popup-video-container {
   margin-bottom: 20px;
 }
@@ -295,7 +280,6 @@ body::before {
   border-radius: 12px;
 }
 
-/* Close button */
 .close-btn {
   position: absolute;
   height: 40px;
@@ -310,14 +294,13 @@ body::before {
   z-index: 30;
 }
 
-/* Heading Section */
 .hero-section {
   display: flex;
   flex-direction: column;
   padding: 50px;
   text-align: center;
   position: relative;
-  z-index: 3; /* Content stays above the effects */
+  z-index: 3;
   justify-content: center;
   align-items: center;
 }
@@ -352,16 +335,6 @@ body::before {
   z-index: 1;
 }
 
-/* .main-logo-blur{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 25px;
-    max-width: 100%;
-    height: auto;
-    z-index: 1;
-} */
-
 .dates {
   font-size: 30px;
   color: #f0f0e4;
@@ -375,50 +348,44 @@ body::before {
   margin: 20px 0;
 }
 
-/* .location:hover, .dates:hover, .event-title:hover {
-  text-shadow: 0 0 10px #ff8000, 0 0 20px #ff8000, 0 0 30px #ff8000;
-} */
-
-/* Landing Footer Section */
-
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 2rem;
-  background: #ffffff1a; /* Light transparent background */
-  backdrop-filter: blur(10px); /* Blurring effect behind the footer */
+  background: #ffffff1a;
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 50px 50px 0 0; /* Rounded corners */
-  border: 1px solid #ffffff33; /* Light border to enhance the glass effect */
-  box-shadow: 0 4px 10px #0000004d; /* Slight shadow for depth */
+  border-radius: 50px 50px 0 0;
+  border: 1px solid #ffffff33;
+  box-shadow: 0 4px 10px #0000004d;
   color: #f0f0e4;
-  height: var(--footer-height); /* Use the variable for height */
-  z-index: 3; /* Footer stays above the effects */
+  height: var(--footer-height);
+  z-index: 3;
   overflow-x: hidden;
 }
 
 .footer-partners {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the awards horizontally */
+  justify-content: center;
   align-items: center;
-  gap: 30px; /* Adjust spacing between awards */
+  gap: 30px;
   padding: 20px 0;
-  max-height: 30vh; /* Limit the awards section to not exceed half the viewport height */
+  max-height: 30vh;
 }
 
 .partner-item {
-  flex: 1 1 auto; /* Allow items to grow and shrink evenly */
+  flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .partner-item img {
-  max-width: 100%; /* Ensure images scale within their container */
-  object-fit: contain; /* Maintain aspect ratio */
+  max-width: 100%;
+  object-fit: contain;
 }
 
 @media (min-width: 1024px) {
@@ -432,9 +399,6 @@ body::before {
   }
 }
 
-/* Media Queries */
-
-/* Full-Screen Menu for Mobile */
 @media (max-width: 1023px) {
   .menu-overlay {
     right: -100%;
@@ -465,16 +429,16 @@ body::before {
   }
 
   .footer-partners {
-    flex-direction: column; /* Stack awards vertically */
+    flex-direction: column;
     gap: 10px;
   }
 
   .partner-item img {
-    height: 60px; /* Further reduce image size for small screens */
+    height: 60px;
   }
 
   .corner-logo {
-    max-width: 15vw; /* Adjust for smaller screens */
+    max-width: 15vw;
     top: 10px;
     left: 10px;
   }
@@ -500,7 +464,7 @@ body::before {
   }
 
   .partner-item img {
-    height: 50px; /* Shrink images for very small screens */
+    height: 50px;
   }
 }
 

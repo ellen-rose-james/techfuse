@@ -90,8 +90,8 @@ body::before {
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-  position: relative; /* To ensure content is layered properly */
-  z-index: 2; /* Main content stays above the blob and blur */
+  position: relative;
+  z-index: 2; 
 }
 
 .header {
@@ -103,9 +103,8 @@ body::before {
   backdrop-filter: blur(10px);
   justify-content: space-between;
   align-items: center;
-  z-index: 20; /* Navbar stays above everything */
+  z-index: 20;
 }
-
 .toggle-button {
   background-color: transparent;
   border: none;
@@ -229,9 +228,8 @@ body::before {
   padding: 50px;
   text-align: center;
   position: relative;
-  z-index: 3; /* Content stays above the effects */
+  z-index: 3; 
 }
-
 .event-title {
   font-size: 30px;
   color: #ffff;
@@ -244,7 +242,7 @@ body::before {
   grid-template-areas: 
     "box1 box2";
   grid-template-columns: 10fr 11fr;
-  grid-template-rows: auto; /* Adjust row height automatically */
+  grid-template-rows: auto; 
   margin-bottom: 30px;
   padding: 0 10%;
   width: 100vw;
@@ -256,7 +254,7 @@ body::before {
   grid-area: box1;
   position: relative;
   width: 100%;
-  background-color: #000; /* Optional for visibility */
+  background-color: #000; 
   border-radius: 10px;
   overflow: hidden;
   align-self: center;
@@ -266,7 +264,7 @@ body::before {
   position: relative;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image fills the container with proper aspect ratio */
+  object-fit: cover; 
 }
 
 .box2 {
@@ -458,11 +456,11 @@ body::before {
 
 @media only screen and (max-width: 900px) {
   .footer {
-    padding: 1rem; /* Adjust padding as needed */
+    padding: 1rem; 
   }
 
   .corner-logo {
-    max-width: 15vw; /* Adjust for smaller screens */
+    max-width: 15vw; 
     top: 10px;
     left: 10px;
   }
@@ -470,11 +468,11 @@ body::before {
 
 @media only screen and (max-width: 480px) {
   .footer {
-    padding: 0.8rem; /* Adjust padding for smaller screens */
+    padding: 0.8rem; 
   }
 
   .corner-logo {
-    max-width: 20vw; /* Adjust for smaller screens */
+    max-width: 20vw; 
   }
 }
 

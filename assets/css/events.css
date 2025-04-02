@@ -90,8 +90,8 @@ body::before {
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-  position: relative; /* To ensure content is layered properly */
-  z-index: 2; /* Main content stays above the blob and blur */
+  position: relative; 
+  z-index: 2; 
 }
 
 .header {
@@ -103,7 +103,7 @@ body::before {
   backdrop-filter: blur(10px);
   justify-content: space-between;
   align-items: center;
-  z-index: 20; /* Navbar stays above everything */
+  z-index: 20; 
 }
 
 .toggle-button {
@@ -257,7 +257,7 @@ body::before {
   padding: 50px;
   text-align: center;
   position: relative;
-  z-index: 3; /* Content stays above the effects */
+  z-index: 3; 
 }
 
 .event-title {
@@ -579,11 +579,11 @@ body::before {
 
 @media only screen and (max-width: 900px) {
   .footer {
-    padding: 1rem; /* Adjust padding as needed */
-  }
+    padding: 1rem; 
+   }
 
   .corner-logo {
-    max-width: 15vw; /* Adjust for smaller screens */
+    max-width: 15vw; 
     top: 10px;
     left: 10px;
   }
@@ -591,11 +591,11 @@ body::before {
 
 @media only screen and (max-width: 480px) {
   .footer {
-    padding: 0.8rem; /* Adjust padding for smaller screens */
+    padding: 0.8rem; 
   }
 
   .corner-logo {
-    max-width: 20vw; /* Adjust for smaller screens */
+    max-width: 20vw;
   }
 }
 
