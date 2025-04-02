@@ -90,8 +90,8 @@ body::before {
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-  position: relative; /* To ensure content is layered properly */
-  z-index: 2; /* Main content stays above the blob and blur */
+  position: relative; 
+  z-index: 2; 
 }
 
 .header {
@@ -103,7 +103,7 @@ body::before {
   backdrop-filter: blur(10px);
   justify-content: space-between;
   align-items: center;
-  z-index: 20; /* Navbar stays above everything */
+  z-index: 20; 
 }
 
 .toggle-button {
@@ -265,7 +265,7 @@ body::before {
   padding: 0.25rem;
   will-change: transform;
   z-index: 3;
-  grid-auto-rows: auto; /* Makes sure the row height adjusts automatically */
+  grid-auto-rows: auto; 
 }
 
 
@@ -288,19 +288,19 @@ body::before {
 /* Responsive Layout */
 @media (max-width: 1024px) {
   .gallery-track {
-    grid-template-columns: repeat(2, 1fr); /* 2 images per row on medium screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 800px) {
   .gallery-track {
-    grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 550px) {
   .gallery-track {
-    grid-template-columns: 1fr; /* 1 image per row on mobile */
+    grid-template-columns: 1fr; 
   }
 }
 
@@ -450,11 +450,11 @@ body::before {
 
 @media only screen and (max-width: 900px) {
   .footer {
-    padding: 1rem; /* Adjust padding as needed */
+    padding: 1rem; 
   }
 
   .corner-logo {
-    max-width: 15vw; /* Adjust for smaller screens */
+    max-width: 15vw; 
     top: 10px;
     left: 10px;
   }
@@ -462,11 +462,11 @@ body::before {
 
 @media only screen and (max-width: 480px) {
   .footer {
-    padding: 0.8rem; /* Adjust padding for smaller screens */
+    padding: 0.8rem; 
   }
 
   .corner-logo {
-    max-width: 20vw; /* Adjust for smaller screens */
+    max-width: 20vw; 
   }
 }
 
